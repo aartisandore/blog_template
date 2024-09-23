@@ -1,26 +1,53 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main Homepage</title>
     <style>
+        /* Use shorthand and more precise properties for styling */
         body {
-            background-image: url('img01.jpg');
+            background: url('img01.jpg') no-repeat center center fixed;
             background-size: cover;
+            font-family: Arial, sans-serif; /* Adding a default font */
+            text-align: center; /* This applies to h1 and similar elements */
         }
+
         h1 {
-            text-align: center;
+            margin-top: 20px; /* Add spacing to top of page */
         }
+
+        /* Use modern font sizing and improved spacing */
+        .content-title {
+            font-size: 1.5em;
+            color: green;
+            margin: 20px 0;
+        }
+
         a {
             text-decoration: none;
-            margin: 10px;
+            margin: 0 15px; /* Apply margin evenly for all links */
+            font-size: 1.5em;
+            color: blue; /* General link color */
+        }
+
+        /* Style individual links when necessary */
+        .contact-link {
+            color: black;
         }
     </style>
 </head>
 <body>
     <h1>Samyak Venture Private Limited</h1>
-    <font size="6" color="green">Dryfruits</font>
-    <br><br>
 
-    <a href="finalproductcopy.html" style="color: blue; font-size: 1.5em;">HOME</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <a href="#" style="color: black; font-size: 1.5em;">CONTACT</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <a href="product.html" style="color: blue; font
+    <!-- Use a class for text styling instead of <font> tag -->
+    <p class="content-title">Dryfruits</p>
+
+    <!-- Improved link structure with semantic use of classes -->
+    <nav>
+        <a href="finalproductcopy.html">HOME</a>
+        <a href="#" class="contact-link">CONTACT</a>
+        <a href="product.html">PRODUCTS</a>
+    </nav>
+</body>
+</html>
